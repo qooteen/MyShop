@@ -18,6 +18,7 @@ public class Main {
         List<Human> humanList = new ArrayList<>();
         humanList.add(new Human(1,"Viktor", 21));
         humanList.add(new Human(2,"Misha", 21));
+        humanList.add(new Human(3,"Max", 21));
 
         try (Connection db = DriverManager.getConnection(url, user, password);
         Statement statement = db.createStatement()){
